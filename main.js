@@ -1,6 +1,3 @@
-// main.js
-// Programa principal de la calculadora
-
 const suma = require("./suma");
 const resta = require("./resta");
 const multiplicacion = require("./multiplicacion");
