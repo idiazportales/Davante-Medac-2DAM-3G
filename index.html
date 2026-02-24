@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CalculadoraDAM</title>
+</head>
+<body>
+
+  <h2>Calculadora</h2>
+
+  <input type="number" id="num1" placeholder="Número 1">
+  <input type="number" id="num2" placeholder="Número 2">
+
+  <button onclick="sumar()">+</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function sumar() {
+      const a = parseFloat(document.getElementById("num1").value);
+      const b = parseFloat(document.getElementById("num2").value);
+
+      const resultado = a + b;
+
+      document.getElementById("resultado").textContent = "Resultado: " + resultado;
+    }
+  </script>
+
+</body>
+</html>
