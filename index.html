@@ -7,34 +7,36 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="calculator">
     <div id="display" class="display">0</div>
+
     <div class="keys">
-      <button class="top-row" data-action="clear" onclick="limpiar()">AC</button>
-      <button class="top-row" data-action="delete" onclick="borrarUltimo()">⌫</button>
-      <button class="top-row operator" data-action="operator" data-value="%" onclick="porcentaje()">%</button>
-      <button class="operator" data-action="operator" data-value="/" onclick="division()">÷</button>
+      <button onclick="agregarNumero('7')">7</button>
+      <button onclick="agregarNumero('8')">8</button>
+      <button onclick="agregarNumero('9')">9</button>
 
-      <button data-action="digit" data-value="7">7</button>
-      <button data-action="digit" data-value="8">8</button>
-      <button data-action="digit" data-value="9">9</button>
-      <button class="operator" data-action="operator" data-value="*" onclick="multiplicacion()">×</button>
+      <button onclick="agregarNumero('4')">4</button>
+      <button onclick="agregarNumero('5')">5</button>
+      <button onclick="agregarNumero('6')">6</button>
 
-      <button data-action="digit" data-value="4">4</button>
-      <button data-action="digit" data-value="5">5</button>
-      <button data-action="digit" data-value="6">6</button>
-      <button class="operator" data-action="operator" data-value="-" onclick="restar()">−</button>
+      <button onclick="agregarNumero('1')">1</button>
+      <button onclick="agregarNumero('2')">2</button>
+      <button onclick="agregarNumero('3')">3</button>
 
-      <button data-action="digit" data-value="1">1</button>
-      <button data-action="digit" data-value="2">2</button>
-      <button data-action="digit" data-value="3">3</button>
-      <button class="operator" data-action="operator" data-value="+" onclick="sumar()">+</button>
+      <button class="wide" onclick="agregarNumero('0')">0</button>
 
-      <button class="wide" data-action="digit" data-value="0">0</button>
-      <button data-action="decimal" data-value=".">.</button>
-      <button class="equal" data-action="equal" onclick="calcularResultado()">=</button>
+      <button class="operator" onclick="usarOperacion('sumar')">+</button>
+      <button class="operator" onclick="usarOperacion('restar')">−</button>
+      <button class="operator" onclick="usarOperacion('multiplicacion')">×</button>
+      <button class="operator" onclick="usarOperacion('division')">÷</button>
+
+      <button class="equal" onclick="calcular()">=</button>
+
+      <button onclick="limpiar()">LIMPIAR</button>
     </div>
   </div>
+
   <script src="operaciones.js"></script>
 </body>
 </html>
